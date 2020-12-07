@@ -1,4 +1,5 @@
-﻿using AppGallery.XamarinForms.Paginas.Navegacao;
+﻿using AppGallery.XamarinForms.Paginas.Modal;
+using AppGallery.XamarinForms.Paginas.Navegacao;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,8 @@ namespace AppGallery
 		{
 			InitializeComponent();
 
-			var pg = new NavigationPage(new Conteudo1());
+			//var pg = new NavigationPage(new Conteudo1());
+			var pg = new PaginaModalInicio();
 			MainPage = pg;
 		}
 

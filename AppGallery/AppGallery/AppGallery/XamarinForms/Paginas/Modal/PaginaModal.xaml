@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGallery.XamarinForms.Paginas.Navegacao.Conteudo2"
-             Title="Conteúdo 02">
+             x:Class="AppGallery.XamarinForms.Paginas.Modal.PaginaModal">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Página de Conteúdo 2"
+            <Label Text="Modal!!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
-            <Button Text="Voltar" Clicked="VoltarAsync" />
-            <Button Text="Avançar" Clicked="AvancarPG03" />
+            <Button Text="Fechar" Clicked="FecharModal" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

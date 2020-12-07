@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="XamarinForms\Paginas\Modal\PaginaModal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XamarinForms\Paginas\Modal\PaginaModalInicio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="XamarinForms\Paginas\Navegacao\Conteudo1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -23,6 +29,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="XamarinForms\Paginas\Navegacao\Conteudo3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XamarinForms\Paginas\Navegacao\PaginaInserida.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="XamarinForms\Paginas\PaginasConteudo\Conteudo01.xaml">

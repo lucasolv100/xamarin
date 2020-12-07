@@ -10,21 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace AppGallery.XamarinForms.Paginas.Navegacao
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Conteudo2 : ContentPage
+	public partial class PaginaInserida : ContentPage
 	{
-		public Conteudo2()
+		public PaginaInserida()
 		{
 			InitializeComponent();
 		}
 
-		private void VoltarAsync(object sender, EventArgs e)
+		private void Inicio(object sender, EventArgs e)
 		{
-			Navigation.PopAsync();
-		}
-
-		private void AvancarPG03(object sender, EventArgs e)
-		{
-			Navigation.PushAsync(new Conteudo3());
+			App.Current.MainPage = new NavigationPage(new Conteudo1());
 		}
 	}
 }
