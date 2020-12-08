@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.AppBase.MenuPrincipal"
+                  xmlns:local="clr-namespace:AppGallery.AppBase">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="Páginas" />
+                    <Button Text="ContentPage" Clicked="AbrirContentPage" />
+                    <Button Text="NavigationPage" Clicked="AbrirNavigationPage" />
+                    <Button Text="CarouselPage" Clicked="AbrirCarouselPage" />
+                    <Button Text="TabbedPage" Clicked="AbrirTabbedPage" />
+                    <Button Text="MasterDetailPage" Clicked="AbrirMasterDetailPage" />
+                    <Button Text="Modal" Clicked="AbrirModal" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <local:Inicio />
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

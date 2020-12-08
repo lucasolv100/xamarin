@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Paginas.Tabbed.Abas"
+            xmlns:local="clr-namespace:AppGallery.XamarinForms.Paginas.Tabbed"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            BarBackgroundColor="Black"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+    <!--Pages can be added as references or inline-->
+    <local:PaginaAba1 Title="PG 1" />
+    <local:PaginaAba2 Title="PG 2" />
+    <local:PaginaAba3 Title="PG 3" />
+</TabbedPage>
