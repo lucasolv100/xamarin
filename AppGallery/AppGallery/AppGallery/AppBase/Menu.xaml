@@ -14,6 +14,10 @@
                     <Button Text="TabbedPage" Clicked="AbrirTabbedPage" />
                     <Button Text="MasterDetailPage" Clicked="AbrirMasterDetailPage" />
                     <Button Text="Modal" Clicked="AbrirModal" />
+
+                    <Label Text="Estilos" />
+                    <Button Text="Stack" Clicked="AbrirStackLayout" />
+                    <Button Text="Grid" Clicked="AbrirGridLayout" />
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>

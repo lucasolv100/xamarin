@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilos.EstiloPilha.Pilha"
+             Title="Stack Layout">
+    <ContentPage.Content>
+        <StackLayout Spacing="0" Margin="6">
+            <StackLayout BackgroundColor="#202020" VerticalOptions="FillAndExpand" Padding="12">
+                <Label Text="Linha 01" TextColor="Black" BackgroundColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="10" />
+                <Label Text="Linha 02" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="#ccc" Padding="15">
+                <Label Text="Linha 03" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+                <Label Text="Linha 04"  BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

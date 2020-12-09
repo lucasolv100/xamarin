@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilos.EstiloGrid.PgGrid"
+             Title="Grid">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black" RowSpacing="1" ColumnSpacing="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250" />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Label Text="0" TextColor="White" VerticalOptions="Center" HorizontalOptions="End" Margin="10" Grid.ColumnSpan="4" FontSize="48" />
+
+            <Button Text="AC" BackgroundColor="#c9cacd" Grid.Column="0" Grid.Row="1" />
+            <Button Text="C" BackgroundColor="#c9cacd" Grid.Column="1" Grid.Row="1" />
+            <Button Text="AP" BackgroundColor="#c9cacd" Grid.Column="2" Grid.Row="1" />
+            <Button Text="/" BackgroundColor="Orange" Grid.Column="3" Grid.Row="1" />
+            <Button Text="x" BackgroundColor="Orange" Grid.Column="3" Grid.Row="2" />
+            <Button Text="-" BackgroundColor="Orange" Grid.Column="3" Grid.Row="3" />
+            <Button Text="+" BackgroundColor="Orange" Grid.Column="3" Grid.Row="4" />
+            <Button Text="=" BackgroundColor="Orange" Grid.Column="3" Grid.Row="5" />
+            <Button Text="." BackgroundColor="#c9cacd" Grid.Column="2" Grid.Row="5" />
+            <Button Text="0" BackgroundColor="#c9cacd" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" />
+            <Button Text="1" BackgroundColor="#c9cacd" Grid.Column="0" Grid.Row="4" />
+            <Button Text="2" BackgroundColor="#c9cacd" Grid.Column="1" Grid.Row="4" />
+            <Button Text="3" BackgroundColor="#c9cacd" Grid.Column="2" Grid.Row="4" />
+            <Button Text="4" BackgroundColor="#c9cacd" Grid.Column="0" Grid.Row="3" />
+            <Button Text="5" BackgroundColor="#c9cacd" Grid.Column="1" Grid.Row="3" />
+            <Button Text="6" BackgroundColor="#c9cacd" Grid.Column="2" Grid.Row="3" />
+            <Button Text="7" BackgroundColor="#c9cacd" Grid.Column="0" Grid.Row="2" />
+            <Button Text="8" BackgroundColor="#c9cacd" Grid.Column="1" Grid.Row="2" />
+            <Button Text="9" BackgroundColor="#c9cacd" Grid.Column="2" Grid.Row="2" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
