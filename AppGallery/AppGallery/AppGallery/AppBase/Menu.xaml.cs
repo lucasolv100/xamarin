@@ -64,5 +64,16 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloGrid.PgGrid();
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbsoluteLayout(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloAbsoluto.Absoluto();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+		private void RelavitoLayout(object sender, EventArgs e)
+		{
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloRelativo.Relativo;
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
 	}
 }

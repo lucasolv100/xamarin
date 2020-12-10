@@ -18,6 +18,8 @@
                     <Label Text="Estilos" />
                     <Button Text="Stack" Clicked="AbrirStackLayout" />
                     <Button Text="Grid" Clicked="AbrirGridLayout" />
+                    <Button Text="Absolute" Clicked="AbsoluteLayout" />
+                    <Button Text="Relativo" Clicked="RelavitoLayout" />
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>
