@@ -72,8 +72,20 @@ namespace AppGallery.AppBase
 		}
 		private void RelavitoLayout(object sender, EventArgs e)
 		{
-			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloRelativo.Relativo;
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloRelativo.Relativo();
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
-	}
+
+        private void FlexLayout(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloFlex.EstiloFlexPG();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirScroll(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloScroll.Scroll();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+    }
 }

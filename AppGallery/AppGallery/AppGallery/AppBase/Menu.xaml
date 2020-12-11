@@ -6,21 +6,25 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <ContentPage.Content>
-                <StackLayout>
-                    <Label Text="Páginas" />
-                    <Button Text="ContentPage" Clicked="AbrirContentPage" />
-                    <Button Text="NavigationPage" Clicked="AbrirNavigationPage" />
-                    <Button Text="CarouselPage" Clicked="AbrirCarouselPage" />
-                    <Button Text="TabbedPage" Clicked="AbrirTabbedPage" />
-                    <Button Text="MasterDetailPage" Clicked="AbrirMasterDetailPage" />
-                    <Button Text="Modal" Clicked="AbrirModal" />
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Páginas" />
+                        <Button Text="ContentPage" Clicked="AbrirContentPage" />
+                        <Button Text="NavigationPage" Clicked="AbrirNavigationPage" />
+                        <Button Text="CarouselPage" Clicked="AbrirCarouselPage" />
+                        <Button Text="TabbedPage" Clicked="AbrirTabbedPage" />
+                        <Button Text="MasterDetailPage" Clicked="AbrirMasterDetailPage" />
+                        <Button Text="Modal" Clicked="AbrirModal" />
 
-                    <Label Text="Estilos" />
-                    <Button Text="Stack" Clicked="AbrirStackLayout" />
-                    <Button Text="Grid" Clicked="AbrirGridLayout" />
-                    <Button Text="Absolute" Clicked="AbsoluteLayout" />
-                    <Button Text="Relativo" Clicked="RelavitoLayout" />
-                </StackLayout>
+                        <Label Text="Estilos" />
+                        <Button Text="Stack" Clicked="AbrirStackLayout" />
+                        <Button Text="Grid" Clicked="AbrirGridLayout" />
+                        <Button Text="Absolute" Clicked="AbsoluteLayout" />
+                        <Button Text="Relativo" Clicked="RelavitoLayout" />
+                        <Button Text="Flex" Clicked="FlexLayout" />
+                        <Button Text="Scroll" Clicked="AbrirScroll" />
+                    </StackLayout>
+                </ScrollView>
             </ContentPage.Content>
         </ContentPage>
     </MasterDetailPage.Master>

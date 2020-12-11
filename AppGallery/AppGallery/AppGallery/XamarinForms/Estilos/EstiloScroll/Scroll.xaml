@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilos.EstiloScroll.Scroll">
+    <ContentPage.Content>
+        <ScrollView x:Name="ScrollPrincipal">
+            <FlexLayout BackgroundColor="Black" Direction="Column" AlignItems="Center" JustifyContent="SpaceBetween">
+                <Button Text="Click Aqui" TextColor="White" BackgroundColor="Black" Clicked="RolarParte2" />
+                <Label FlexLayout.AlignSelf="Center" TextColor="White" Text="
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum eros quam. Suspendisse potenti. Quisque cursus feugiat accumsan. Nulla facilisi. Proin egestas orci molestie ex varius, sed vehicula augue cursus. Morbi ultrices, ante vel porta ultricies, odio dui accumsan leo, a pellentesque lorem eros eget neque. Vivamus metus magna, imperdiet sed nunc scelerisque, vestibulum eleifend sem.
+
+Duis feugiat vestibulum libero vitae tincidunt. Quisque commodo metus non ligula ornare, non maximus orci auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin nisl metus, elementum id nisi nec, vulputate rhoncus velit. Ut dolor purus, mattis a semper eget, pretium sit amet risus. Proin ullamcorper nisi sed leo euismod lacinia. In justo mi, pellentesque a magna eu, posuere varius enim. Maecenas et urna ornare risus mollis fermentum sit amet sed erat. Etiam consectetur quam et diam convallis, in rhoncus nulla scelerisque. Donec tincidunt at ante molestie sagittis. Morbi malesuada ligula orci, ac malesuada nisi varius quis. Fusce vel velit metus. Curabitur ac velit aliquam, commodo sapien imperdiet, varius justo. Cras viverra lectus consequat quam pharetra iaculis. Proin sit amet mi dignissim, vehicula ligula et, fringilla risus.
+
+Duis gravida sem eu ultrices iaculis. Ut a orci luctus, auctor ex id, consectetur neque. Donec nec lacinia turpis. Donec congue, massa eu sodales ultricies, neque justo finibus lacus, vulputate pharetra ligula odio non metus. Morbi felis dui, vestibulum nec ipsum tempus, pulvinar sollicitudin magna. Donec tincidunt consectetur risus pharetra tincidunt. Nam suscipit eget est eu imperdiet. Phasellus eu mi elit.
+
+Donec convallis porttitor ipsum sed pharetra. Sed et euismod eros, vel finibus nibh. Nunc vestibulum pellentesque risus sed dictum. Nulla cursus eget urna non hendrerit. Fusce at efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum orci diam, molestie vel dolor a, cursus vehicula sem.
+
+Aliquam erat volutpat. Aenean elementum eget enim sit amet ultricies. Etiam tempor mi vitae aliquam maximus. Ut arcu massa, gravida in tristique rutrum, accumsan sit amet lorem. Etiam a elit pulvinar ante blandit hendrerit. Nulla lacinia iaculis nulla, ac feugiat elit volutpat vel. Duis accumsan, neque in venenatis lobortis, libero ex ultrices nisi, eu porttitor ex orci non nibh. Nam dignissim dignissim orci vel accumsan. Maecenas et mi felis. Aenean rutrum risus quis porttitor rutrum. Vivamus eget justo malesuada, convallis nulla vitae, tempor magna. Nunc mattis convallis massa non iaculis. Maecenas mauris sem, pulvinar vitae velit quis, laoreet finibus est. Aenean pharetra scelerisque tortor. Cras mauris ipsum, venenatis in laoreet tincidunt, cursus vitae erat. " />
+
+                <Label Margin="10" x:Name="Parte2" FlexLayout.AlignSelf="Center" TextColor="White" Text="
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum eros quam. Suspendisse potenti. Quisque cursus feugiat accumsan. Nulla facilisi. Proin egestas orci molestie ex varius, sed vehicula augue cursus. Morbi ultrices, ante vel porta ultricies, odio dui accumsan leo, a pellentesque lorem eros eget neque. Vivamus metus magna, imperdiet sed nunc scelerisque, vestibulum eleifend sem.
+
+Duis feugiat vestibulum libero vitae tincidunt. Quisque commodo metus non ligula ornare, non maximus orci auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin nisl metus, elementum id nisi nec, vulputate rhoncus velit. Ut dolor purus, mattis a semper eget, pretium sit amet risus. Proin ullamcorper nisi sed leo euismod lacinia. In justo mi, pellentesque a magna eu, posuere varius enim. Maecenas et urna ornare risus mollis fermentum sit amet sed erat. Etiam consectetur quam et diam convallis, in rhoncus nulla scelerisque. Donec tincidunt at ante molestie sagittis. Morbi malesuada ligula orci, ac malesuada nisi varius quis. Fusce vel velit metus. Curabitur ac velit aliquam, commodo sapien imperdiet, varius justo. Cras viverra lectus consequat quam pharetra iaculis. Proin sit amet mi dignissim, vehicula ligula et, fringilla risus.
+
+Duis gravida sem eu ultrices iaculis. Ut a orci luctus, auctor ex id, consectetur neque. Donec nec lacinia turpis. Donec congue, massa eu sodales ultricies, neque justo finibus lacus, vulputate pharetra ligula odio non metus. Morbi felis dui, vestibulum nec ipsum tempus, pulvinar sollicitudin magna. Donec tincidunt consectetur risus pharetra tincidunt. Nam suscipit eget est eu imperdiet. Phasellus eu mi elit.
+
+Donec convallis porttitor ipsum sed pharetra. Sed et euismod eros, vel finibus nibh. Nunc vestibulum pellentesque risus sed dictum. Nulla cursus eget urna non hendrerit. Fusce at efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum orci diam, molestie vel dolor a, cursus vehicula sem.
+
+Aliquam erat volutpat. Aenean elementum eget enim sit amet ultricies. Etiam tempor mi vitae aliquam maximus. Ut arcu massa, gravida in tristique rutrum, accumsan sit amet lorem. Etiam a elit pulvinar ante blandit hendrerit. Nulla lacinia iaculis nulla, ac feugiat elit volutpat vel. Duis accumsan, neque in venenatis lobortis, libero ex ultrices nisi, eu porttitor ex orci non nibh. Nam dignissim dignissim orci vel accumsan. Maecenas et mi felis. Aenean rutrum risus quis porttitor rutrum. Vivamus eget justo malesuada, convallis nulla vitae, tempor magna. Nunc mattis convallis massa non iaculis. Maecenas mauris sem, pulvinar vitae velit quis, laoreet finibus est. Aenean pharetra scelerisque tortor. Cras mauris ipsum, venenatis in laoreet tincidunt, cursus vitae erat. " />
+            </FlexLayout>
+        </ScrollView>
+        </ContentPage.Content>
+</ContentPage>

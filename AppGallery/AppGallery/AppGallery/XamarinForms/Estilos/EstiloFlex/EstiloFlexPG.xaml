@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilos.EstiloFlex.EstiloFlexPG">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column">
+            <FlexLayout FlexLayout.Grow="1" BackgroundColor="Green" Direction="Column" AlignItems="Start" JustifyContent="SpaceAround">
+                <Label Text="linha 01" FlexLayout.AlignSelf="Center" TextColor="White" />
+                <Label Text="linha 02" TextColor="White" />
+                <Label Text="linha 03" TextColor="White" />
+            </FlexLayout>
+            <FlexLayout FlexLayout.Grow="1" Direction="Row" BackgroundColor="Blue" AlignItems="Start" JustifyContent="SpaceBetween" Wrap="Wrap" AlignContent="Start">
+                <Label Text="linha 01" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 02" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 03" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 04" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 05" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 06" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 07" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 08" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 09" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 10" TextColor="White" BackgroundColor="Black" />
+                <Label Text="linha 11" TextColor="White" BackgroundColor="Black" />
+            </FlexLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>
