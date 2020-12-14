@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilos.EstiloContent.ControlePagina"
+             xmlns:controle="clr-namespace:AppGallery.XamarinForms.Estilos.EstiloContent">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Black" Padding="20">
+                <Label TextColor="white" Text="Titulo" FontSize="36" />
+                <Label TextColor="white" Text="Teste de reutilização" FontSize="18" />
+            </StackLayout>
+            <controle:CardTitulo Titulo="Contas a pagar" Texto="contas 1" CorFundo="#202020" />
+            <controle:CardTitulo Titulo="Contas a receber" Texto="contas 2" CorFundo="Green" />
+            <controle:CardTitulo Titulo="Entradas" Texto="entradas 1" CorFundo="Green" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

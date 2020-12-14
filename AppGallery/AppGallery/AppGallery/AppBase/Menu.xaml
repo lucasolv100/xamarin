@@ -23,6 +23,7 @@
                         <Button Text="Relativo" Clicked="RelavitoLayout" />
                         <Button Text="Flex" Clicked="FlexLayout" />
                         <Button Text="Scroll" Clicked="AbrirScroll" />
+                        <Button Text="ContentView" Clicked="AbrirContentView" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

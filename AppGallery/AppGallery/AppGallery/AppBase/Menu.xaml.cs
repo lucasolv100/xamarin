@@ -87,5 +87,11 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloScroll.Scroll();
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirContentView(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloContent.ControlePagina();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }
