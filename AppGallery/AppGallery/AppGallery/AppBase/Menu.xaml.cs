@@ -93,5 +93,11 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloContent.ControlePagina();
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirFrame(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloFrame.Quadrado();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }

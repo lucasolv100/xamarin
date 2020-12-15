@@ -12,6 +12,8 @@
             <controle:CardTitulo Titulo="Contas a pagar" Texto="contas 1" CorFundo="#202020" />
             <controle:CardTitulo Titulo="Contas a receber" Texto="contas 2" CorFundo="Green" />
             <controle:CardTitulo Titulo="Entradas" Texto="entradas 1" CorFundo="Green" />
+            <controle:CardAuthor Nome="João" Descricao="Diretor do filme Marvel" BVColor="blue" />
+            <controle:CardAuthor />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

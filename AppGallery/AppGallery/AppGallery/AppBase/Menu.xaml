@@ -24,6 +24,7 @@
                         <Button Text="Flex" Clicked="FlexLayout" />
                         <Button Text="Scroll" Clicked="AbrirScroll" />
                         <Button Text="ContentView" Clicked="AbrirContentView" />
+                        <Button Text="Frame" Clicked="AbrirFrame" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>
