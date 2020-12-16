@@ -33,6 +33,7 @@
                         <Button Text="Botao Img" Clicked="AbrirBotaoImgControle" />
                         <Button Text="Imagem" Clicked="AbrirImagemControle" />
                         <Button Text="Entry" Clicked="AbrirEntryControle" />
+                        <Button Text="Outros Ex" Clicked="AbrirEditorControle" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

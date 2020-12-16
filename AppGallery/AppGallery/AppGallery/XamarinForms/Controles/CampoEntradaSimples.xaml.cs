@@ -16,5 +16,25 @@ namespace AppGallery.XamarinForms.Controles
         {
             InitializeComponent();
         }
+
+        private void FocusEvento(object sender, FocusEventArgs e)
+        {
+            Foco.Text = "Em foco";
+        }
+
+        private void SemFocoEVT(object sender, FocusEventArgs e)
+        {
+            TFoco.Text = "Sem foco";
+        }
+
+        private void txtChEVT(object sender, TextChangedEventArgs e)
+        {
+            Mudanca.Text = e.NewTextValue + " " + e.NewTextValue.Length;
+        }
+
+        private void txtCplEVT(object sender, EventArgs e)
+        {
+            Completo.Text = "Terminou";
+        }
     }
 }

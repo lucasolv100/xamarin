@@ -34,12 +34,12 @@
                 <Entry ReturnType="Go" Keyboard="Email" />
 
                 <Label Text="focus, tirar focus, change, completo"/>
-                <Entry />
+                <Entry Focused="FocusEvento" Unfocused="SemFocoEVT" TextChanged="txtChEVT" Completed="txtCplEVT" />
 
-                <Label Text="" x:Name="Foco" />
-                <Label Text="" x:Name="TFoco" />
-                <Label Text="" x:Name="Mudanca" />
-                <Label Text="" x:Name="Completo" />
+                <Label Text="-" x:Name="Foco" />
+                <Label Text="-" x:Name="TFoco" />
+                <Label Text="-" x:Name="Mudanca" />
+                <Label Text="-" x:Name="Completo" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

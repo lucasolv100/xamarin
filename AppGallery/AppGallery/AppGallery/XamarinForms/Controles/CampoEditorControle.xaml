@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.CampoEditorControle"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout>
+            <Editor HeightRequest="20" />
+
+            <Label Text="IsChecked, Cor" />
+            <CheckBox IsChecked="True" Color="Purple" />
+
+            <Label Text="IsChecked, Cor" />
+            <Switch HorizontalOptions="Start" ThumbColor="Blue" IsToggled="True" OnColor="Blue" />
+
+            <StackLayout BackgroundColor="Black">
+                <Label Text="Escolha o Periodo" />
+                <Slider Minimum="0" Maximum="5" Value="3" />
+            </StackLayout>
+
+            <Label Text="Customizado" />
+            <Slider Minimum="0" Maximum="5" Value="3" MinimumTrackColor="Blue" MaximumTrackColor="Red" ThumbColor="Green" ThumbImageSource="plane.png" />
+
+            <Label Text="Eventos" />
+            <Slider 
+                Minimum="0"
+                Maximum="5"
+                Value="3"
+                MinimumTrackColor="Blue"
+                MaximumTrackColor="Red"
+                ThumbColor="Green"
+                ThumbImageSource="plane.png"
+                
+                ValueChanged="Slider_ValueChanged"
+                DragStarted="Slider_DragStarted"
+                DragCompleted="Slider_DragCompleted"
+            />
+
+            <Label x:Name="lblEVTs" />
+
+
+            <Slider 
+                Minimum="0"
+                Maximum="10"
+                Value="0"
+                MinimumTrackColor="Blue"
+                MaximumTrackColor="Red"
+                ThumbColor="Green"
+                ThumbImageSource="plane.png"
+                
+                ValueChanged="Slider_ValueChangedStep"
+            />
+
+            <Label x:Name="lblEVTs2" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
