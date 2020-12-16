@@ -19,7 +19,7 @@ namespace AppGallery.AppBase
 
 		private void AbrirContentPage(object sender, EventArgs e)
 		{
-			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Paginas.PaginasConteudo.Conteudo01();
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Paginas.PaginasConteudo.Conteudo01());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
 
@@ -31,13 +31,13 @@ namespace AppGallery.AppBase
 
 		private void AbrirCarouselPage(object sender, EventArgs e)
 		{
-			((MasterDetailPage)App.Current.MainPage).Detail =new XamarinForms.Paginas.Carousel.Carousel();
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Paginas.Carousel.Carousel());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
 
 		private void AbrirTabbedPage(object sender, EventArgs e)
 		{
-			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Paginas.Tabbed.Abas();
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Paginas.Tabbed.Abas());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
 
@@ -49,7 +49,7 @@ namespace AppGallery.AppBase
 
 		private void AbrirModal(object sender, EventArgs e)
 		{
-			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Paginas.Modal.PaginaModal();
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Paginas.Modal.PaginaModal());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
 
@@ -109,6 +109,30 @@ namespace AppGallery.AppBase
         private void AbrirLabelControle(object sender, EventArgs e)
         {
 			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.LabelControle();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirBotaoControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.BotaoControle();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirBotaoImgControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.BotaoImagemControle());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirImagemControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.ImagemControle());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirEntryControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.CampoEntradaSimples());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
     }

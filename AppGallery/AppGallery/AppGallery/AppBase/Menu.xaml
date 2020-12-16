@@ -29,6 +29,10 @@
                         <Label Text="Controles" />
                         <Button Text="BoxView" Clicked="AbrirBoxViewControle" />
                         <Button Text="Label" Clicked="AbrirLabelControle" />
+                        <Button Text="Botao" Clicked="AbrirBotaoControle" />
+                        <Button Text="Botao Img" Clicked="AbrirBotaoImgControle" />
+                        <Button Text="Imagem" Clicked="AbrirImagemControle" />
+                        <Button Text="Entry" Clicked="AbrirEntryControle" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>
