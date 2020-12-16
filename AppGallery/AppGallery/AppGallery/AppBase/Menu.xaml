@@ -44,6 +44,7 @@
 
                         <Label Text="Listas" />
                         <Button Text="TableView" Clicked="AbrirTableView" />
+                        <Button Text="ListView" Clicked="AbrirListView" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

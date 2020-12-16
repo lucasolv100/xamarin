@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.ListViewLista"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Carros FIAT"/>
+            <!--<ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Mobi</x:String>
+                        <x:String>Uno</x:String>
+                        <x:String>Cronos</x:String>
+                        <x:String>Toro</x:String>
+                        <x:String>Argo</x:String>
+                        <x:String>Strada</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="Blue" Detail="Motor 1.0" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+            <ListView x:Name="lista01" IsGroupingEnabled="True" SeparatorVisibility="Default" SeparatorColor="Blue" HasUnevenRows="True">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding NomeMarca}" FontAttributes="Bold" FontSize="30" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <!--<ListView.Header>
+                    <StackLayout />
+                </ListView.Header>-->
+                <!--<ListView.Footer>
+                    <StackLayout />
+                </ListView.Footer>-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding Nome}" TextColor="Blue" Detail="{Binding Motor}" />-->
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Visualizar" CommandParameter="{Binding .}" Clicked="MenuItem_Clicked" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Nome}" FontSize="15" FontAttributes="Bold" />
+                                <Label Text="{Binding Motor}" />
+                                <Label Text="{Binding Descricao}" FontAttributes="Italic" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
