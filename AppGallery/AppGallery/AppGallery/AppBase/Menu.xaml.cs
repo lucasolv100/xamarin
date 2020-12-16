@@ -99,5 +99,17 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Estilos.EstiloFrame.Quadrado();
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirBoxViewControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.CaixaControle();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirLabelControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.LabelControle();
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }

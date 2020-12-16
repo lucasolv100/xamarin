@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.LabelControle">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+
+                <Label TextColor="Black" Text="TextType" />
+                <Label Text="texto &lt;strong&gt;01&lt;/strong&gt;" TextType="Html" />
+                <Label TextType="Html">
+                    <![CDATA[
+                        Texto <strong><i>02</i></strong>
+                    ]]>
+                </Label>
+
+                <Label TextColor="Black" Text="HorizontalTextAlign" />
+                <Label Text="texto 01" TextColor="White" BackgroundColor="Black" HorizontalTextAlignment="Center" />
+
+                <Label TextColor="Black" Text="VerticalTextAlign" />
+                <Label Text="texto 01" TextColor="White" BackgroundColor="Black" VerticalTextAlignment="Center" HeightRequest="50" />
+
+
+                <Label TextColor="Black" Text="Formatação" />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Texto " TextColor="Green" FontSize="12" />
+                            <Span Text="01" TextColor="Red" FontSize="18" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" Text="TextColor" />
+                <Label Text="texto 01" TextColor="#7FFF0000" />
+
+                <Label TextColor="Black" Text="TextDecoration" />
+                <Label Text="texto 01" TextDecorations="Strikethrough" />
+                <Label Text="texto 02" TextDecorations="Underline" />
+
+                <Label TextColor="Black" Text="CharacterSpacing" />
+                <Label Text="texto 01" CharacterSpacing="-2" />
+                <Label Text="texto 02" CharacterSpacing="10" />
+
+                <Label TextColor="Black" Text="LineHeight" />
+                <Label MaxLines="3" LineHeight="1.2" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec commodo nunc. Donec a tincidunt metus, quis finibus dui. Nunc lobortis fringilla nunc, vestibulum pharetra sem tempus non. Mauris auctor tellus ac nunc viverra dictum. Cras consectetur urna ut mi consequat pellentesque. Pellentesque sit amet tortor egestas, ullamcorper est sit amet, tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at nulla rutrum, congue magna a, elementum odio. Maecenas commodo, felis eu efficitur facilisis, quam erat porta elit, id porta eros justo vitae ligula. Sed ac molestie tellus. Nullam eget nunc augue. " />
+
+                <Label TextColor="Black" Text="MaxLines" />
+                <Label MaxLines="3" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec commodo nunc. Donec a tincidunt metus, quis finibus dui. Nunc lobortis fringilla nunc, vestibulum pharetra sem tempus non. Mauris auctor tellus ac nunc viverra dictum. Cras consectetur urna ut mi consequat pellentesque. Pellentesque sit amet tortor egestas, ullamcorper est sit amet, tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at nulla rutrum, congue magna a, elementum odio. Maecenas commodo, felis eu efficitur facilisis, quam erat porta elit, id porta eros justo vitae ligula. Sed ac molestie tellus. Nullam eget nunc augue. " />
+
+                <Label TextColor="Black" Text="LineBrakMode" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec commodo nunc. Donec a tincidunt metus, quis finibus dui. Nunc lobortis fringilla nunc, vestibulum pharetra sem tempus non. Mauris auctor tellus ac nunc viverra dictum. Cras consectetur urna ut mi consequat pellentesque. Pellentesque sit amet tortor egestas, ullamcorper est sit amet, tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at nulla rutrum, congue magna a, elementum odio. Maecenas commodo, felis eu efficitur facilisis, quam erat porta elit, id porta eros justo vitae ligula. Sed ac molestie tellus. Nullam eget nunc augue. " />
+                <Label LineBreakMode="NoWrap" TextColor="blue" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec commodo nunc. Donec a tincidunt metus, quis finibus dui. Nunc lobortis fringilla nunc, vestibulum pharetra sem tempus non. Mauris auctor tellus ac nunc viverra dictum. Cras consectetur urna ut mi consequat pellentesque. Pellentesque sit amet tortor egestas, ullamcorper est sit amet, tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at nulla rutrum, congue magna a, elementum odio. Maecenas commodo, felis eu efficitur facilisis, quam erat porta elit, id porta eros justo vitae ligula. Sed ac molestie tellus. Nullam eget nunc augue. " />
+                <Label LineBreakMode="HeadTruncation" TextColor="green" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec commodo nunc. Donec a tincidunt metus, quis finibus dui. Nunc lobortis fringilla nunc, vestibulum pharetra sem tempus non. Mauris auctor tellus ac nunc viverra dictum. Cras consectetur urna ut mi consequat pellentesque. Pellentesque sit amet tortor egestas, ullamcorper est sit amet, tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at nulla rutrum, congue magna a, elementum odio. Maecenas commodo, felis eu efficitur facilisis, quam erat porta elit, id porta eros justo vitae ligula. Sed ac molestie tellus. Nullam eget nunc augue. " />
+                <Label LineBreakMode="TailTruncation" TextColor="red" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec commodo nunc. Donec a tincidunt metus, quis finibus dui. Nunc lobortis fringilla nunc, vestibulum pharetra sem tempus non. Mauris auctor tellus ac nunc viverra dictum. Cras consectetur urna ut mi consequat pellentesque. Pellentesque sit amet tortor egestas, ullamcorper est sit amet, tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at nulla rutrum, congue magna a, elementum odio. Maecenas commodo, felis eu efficitur facilisis, quam erat porta elit, id porta eros justo vitae ligula. Sed ac molestie tellus. Nullam eget nunc augue. " />
+
+
+
+                <!--<Label TextColor="Black" Text="Text decoration" />
+                <Label Text="texto 01" />
+                <Label Text="texto 02" />-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
