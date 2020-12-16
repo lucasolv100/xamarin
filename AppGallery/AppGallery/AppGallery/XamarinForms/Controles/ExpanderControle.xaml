@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.ExpanderControle"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Expander" />
+
+            <Frame BorderColor="Green">
+                <Expander ExpandAnimationEasing="{x:Static Easing.BounceOut}" CollapseAnimationEasing="{x:Static Easing.SinOut}" ExpandAnimationLength="3000" CollapseAnimationLength="3000">
+                    <Expander.Header>
+                        <Label Text="Receita" TextColor="Green" />
+                    </Expander.Header>
+                    <Expander.Content>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Dia 03" Grid.Row="0" Grid.Column="0" />
+                            <Label Text="Salário" Grid.Row="0" Grid.Column="1" />
+                            <Label Text="R$ 3.000,00" Grid.Row="0" Grid.Column="2" TextColor="Green" />
+
+                            <Label Text="Dia 15" Grid.Row="1" Grid.Column="0" />
+                            <Label Text="Salário" Grid.Row="1" Grid.Column="1" />
+                            <Label Text="R$ 1.500,00" Grid.Row="1" Grid.Column="2" TextColor="Green" />
+
+                            <Label Text="Dia 20" Grid.Row="2" Grid.Column="0" />
+                            <Label Text="TED" Grid.Row="2" Grid.Column="1" />
+                            <Label Text="R$ 200,00" Grid.Row="2" Grid.Column="2" TextColor="Green" />
+                        </Grid>
+                    </Expander.Content>
+                </Expander>
+            </Frame>
+
+
+            <Frame BorderColor="Red">
+                <Expander>
+                    <Expander.Header>
+                        <Label Text="Despesas" TextColor="Red" />
+                    </Expander.Header>
+                    <Expander.Content>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Dia 03" Grid.Row="0" Grid.Column="0" />
+                            <Label Text="Conta de Luz" Grid.Row="0" Grid.Column="1" />
+                            <Label Text="R$ 150,00" Grid.Row="0" Grid.Column="2" TextColor="Red" />
+
+                            <Label Text="Dia 03" Grid.Row="1" Grid.Column="0" />
+                            <Label Text="Conta de Água" Grid.Row="1" Grid.Column="1" />
+                            <Label Text="R$ 80,00" Grid.Row="1" Grid.Column="2" TextColor="Red" />
+
+                            <Label Text="Dia 20" Grid.Row="2" Grid.Column="0" />
+                            <Label Text="Conta de gás" Grid.Row="2" Grid.Column="1" />
+                            <Label Text="R$ 45,00" Grid.Row="2" Grid.Column="2" TextColor="Red" />
+                        </Grid>
+                    </Expander.Content>
+                </Expander>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

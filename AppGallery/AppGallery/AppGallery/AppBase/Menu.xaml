@@ -40,6 +40,10 @@
                         <Button Text="RefreshView" Clicked="AbrirRefreshViewControle" />
                         <Button Text="SwipeView" Clicked="AbrirSwipeViewControle" />
                         <Button Text="WebView" Clicked="AbrirWebViewControle" />
+                        <Button Text="Expander" Clicked="AbrirExpanderControle" />
+
+                        <Label Text="Listas" />
+                        <Button Text="TableView" Clicked="AbrirTableView" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

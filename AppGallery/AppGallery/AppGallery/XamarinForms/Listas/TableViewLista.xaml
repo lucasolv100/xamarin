@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.TableViewLista"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Tabela" />
+
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Gerência">
+                        <TextCell Text="Geraldo" TextColor="Black" Detail="Gerente de Mkt" />
+                        <TextCell Text="João" TextColor="Black" Detail="Gerente de Armazen" />
+                        <TextCell Text="José" TextColor="Black" Detail="Gerente de Caixa" />
+                    </TableSection>
+                    <TableSection Title="Supervisores">
+                        <ImageCell Text="Lucas" Detail="Sup. TI" ImageSource="perfil.jpg" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

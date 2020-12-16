@@ -177,5 +177,17 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.WebViewControle());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirExpanderControle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.ExpanderControle());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirTableView(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Listas.TableViewLista());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }
