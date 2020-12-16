@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.SwipeControle"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Swipe" />
+            <Label Text="Propriedades: IsRefreshing, RefreshingColor" />
+            <Label Text="Eventos: Refreshing" />
+            <Label Text="Observação: Requisito Xamarin 4.4+  => SwipeView_Experimental" />
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems SwipeBehaviorOnInvoked="RemainOpen">
+                        <SwipeItem Text="Detalhes" Invoked="DetalheSW" BackgroundColor="Blue" />
+                        <SwipeItem Text="Editar" Invoked="EditarSW" BackgroundColor="Orange" />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+
+                <SwipeView.RightItems>
+                    <SwipeItems Mode="Execute">
+                        <SwipeItem Text="Excluir" Invoked="ExcluirSW" BackgroundColor="Red" />
+                    </SwipeItems>
+                </SwipeView.RightItems>
+                <Frame BorderColor="Gray">
+                    <Label Text="Arraste-me" TextColor="Red" FontSize="25" HorizontalTextAlignment="Center" />
+                </Frame>
+            </SwipeView>
+
+            <Label x:Name="lblDetalhe" Text=" - " />
+            <Label x:Name="lblEditar" Text=" - " />
+            <Label x:Name="lblExcluir" Text=" - " />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

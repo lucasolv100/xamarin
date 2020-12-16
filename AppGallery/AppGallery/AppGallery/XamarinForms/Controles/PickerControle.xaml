@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.PickerControle"
+             Padding="10">
+    <ContentPage.Content>
+        <ScrollView>
+         <StackLayout>
+                <Label Text="Estilos" />
+                <Picker Title="Selecione a marca" FontSize="18" TitleColor="Red">
+                    <Picker.Items>
+                        <x:String>FIAT</x:String>
+                        <x:String>RENAULT</x:String>
+                        <x:String>VOLKSWAGEM</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Label Text="Eventos" />
+                <Picker x:Name="pMarca" Title="Selecione a marca" SelectedIndexChanged="Picker_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>FIAT</x:String>
+                        <x:String>RENAULT</x:String>
+                        <x:String>VOLKSWAGEM</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button Text="Limpar Picker" Clicked="Button_Clicked" />
+
+
+                <Label Text="Date Picker" />
+                <DatePicker Date="12/05/2020" MinimumDate="12/01/2020" MaximumDate="12/10/2020" TextColor="BlueViolet" FontSize="21" DateSelected="DatePicker_DateSelected" />
+                <Label Text=" - " x:Name="lblInfo" />
+
+
+                <Label Text="Time Picker" />
+                <TimePicker PropertyChanged="TimePicker_PropertyChanged" />
+                <Label Text=" - " x:Name="lblInfo2" />
+
+             </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

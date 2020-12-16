@@ -34,6 +34,12 @@
                         <Button Text="Imagem" Clicked="AbrirImagemControle" />
                         <Button Text="Entry" Clicked="AbrirEntryControle" />
                         <Button Text="Outros Ex" Clicked="AbrirEditorControle" />
+                        <Button Text="Picker" Clicked="AbrirPickerControle" />
+                        <Button Text="Indicador Atividade" Clicked="AbrirActivityIndicatorControle" />
+                        <Button Text="Barra Pesquisa" Clicked="AbrirBarraPesquisaControle" />
+                        <Button Text="RefreshView" Clicked="AbrirRefreshViewControle" />
+                        <Button Text="SwipeView" Clicked="AbrirSwipeViewControle" />
+                        <Button Text="WebView" Clicked="AbrirWebViewControle" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

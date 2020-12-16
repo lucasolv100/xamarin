@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.RefreshControle"
+             Padding="10">
+    <ContentPage.Content>
+        <RefreshView RefreshColor="Blue" Refreshing="RefreshView_Refreshing">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Refresh View" />
+                    <Label Text="Propriedades: IsRefreshing, RefreshingColor" />
+                    <Label Text="Eventos: Refreshing" />
+                    <Label Text="Observação: Para funcionar precisa de barra de rolagem" />
+
+                    <Label x:Name="lblStatus" Text="Não Atualizado" TextColor="Red" FontSize="24" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            
+                    <RefreshView />
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>
