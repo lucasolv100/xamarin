@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.CollecionViewLista"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CollectionView" />
+
+            <CollectionView x:Name="c01" EmptyView="Não foram encontrados resultados para a pesquisa." HeightRequest="80">
+
+                <CollectionView.Header>
+                    <Label Text="Cabeçalho" Padding="10" TextColor="White" BackgroundColor="Gray" />
+                </CollectionView.Header>
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
+                </CollectionView.ItemsLayout>
+                
+                
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout BackgroundColor="Black">
+                            <Label Text="{Binding Nome}" TextColor="White" />
+                            <Label Text="{Binding QtdFranquias}" TextColor="White" />
+                        </StackLayout>        
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+                <CollectionView.Footer>
+                    <Label Text="Rodapé" Padding="10" TextColor="White" BackgroundColor="Gray" />
+                </CollectionView.Footer>
+            </CollectionView>
+
+            <CollectionView x:Name="c02" EmptyView="Não foram encontrados resultados para a pesquisa.">
+
+                <CollectionView.Header>
+                    <Label Text="Cabeçalho" Padding="10" TextColor="White" BackgroundColor="Gray" />
+                </CollectionView.Header>
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="2" Orientation="Vertical" VerticalItemSpacing="5" HorizontalItemSpacing="5" />
+                </CollectionView.ItemsLayout>
+
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="{Binding Nome}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label Text="{Binding QtdFranquias}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+                <CollectionView.Footer>
+                    <Label Text="Rodapé" Padding="10" TextColor="White" BackgroundColor="Gray" />
+                </CollectionView.Footer>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

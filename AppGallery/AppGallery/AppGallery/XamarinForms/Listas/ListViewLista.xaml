@@ -24,7 +24,13 @@
                 </ListView.ItemTemplate>
             </ListView>-->
 
-            <ListView x:Name="lista01" IsGroupingEnabled="True" SeparatorVisibility="Default" SeparatorColor="Blue" HasUnevenRows="True">
+            <ListView SelectionMode="None" ItemTapped="lista01_ItemTapped" x:Name="lista01" IsGroupingEnabled="True" SeparatorVisibility="Default" SeparatorColor="Blue" HasUnevenRows="True">
+                <ListView.Header>
+                    <StackLayout>
+                        <Button Text="Click para ir para a marca Renault" Clicked="IrParaRenault" />
+                    </StackLayout>
+                </ListView.Header>
+                
                 <ListView.GroupHeaderTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -34,9 +40,6 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.GroupHeaderTemplate>
-                <!--<ListView.Header>
-                    <StackLayout />
-                </ListView.Header>-->
                 <!--<ListView.Footer>
                     <StackLayout />
                 </ListView.Footer>-->
