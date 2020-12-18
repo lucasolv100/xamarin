@@ -46,6 +46,7 @@
                         <Button Text="TableView" Clicked="AbrirTableView" />
                         <Button Text="ListView" Clicked="AbrirListView" />
                         <Button Text="CollectionView" Clicked="AbrirCollectionView" />
+                        <Button Text="CArouselView" Clicked="AbrirCArouselView" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

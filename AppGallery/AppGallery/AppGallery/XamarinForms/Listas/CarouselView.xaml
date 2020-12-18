@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.CarouselView"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""/>
+            <CarouselView x:Name="carousel01" PeekAreaInsets="80">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Frame BorderColor="#ccc">
+                            <StackLayout>
+                                <Label Text="{Binding Nome}" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+                                <Label Text="{Binding Cargo}" TextColor="Gray" FontSize="15"  />
+                                <Label Text="{Binding Descricao}" TextColor="Gray" FontSize="12" />
+                            </StackLayout>
+                        </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

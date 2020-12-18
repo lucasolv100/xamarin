@@ -7,7 +7,7 @@
         <StackLayout>
             <Label Text="CollectionView" />
 
-            <CollectionView x:Name="c01" EmptyView="Não foram encontrados resultados para a pesquisa." HeightRequest="80">
+            <!--<CollectionView x:Name="c01" EmptyView="Não foram encontrados resultados para a pesquisa." HeightRequest="80">
 
                 <CollectionView.Header>
                     <Label Text="Cabeçalho" Padding="10" TextColor="White" BackgroundColor="Gray" />
@@ -16,23 +16,29 @@
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
                 </CollectionView.ItemsLayout>
-                
-                
+
+
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout BackgroundColor="Black">
                             <Label Text="{Binding Nome}" TextColor="White" />
                             <Label Text="{Binding QtdFranquias}" TextColor="White" />
-                        </StackLayout>        
+                        </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
 
                 <CollectionView.Footer>
                     <Label Text="Rodapé" Padding="10" TextColor="White" BackgroundColor="Gray" />
                 </CollectionView.Footer>
-            </CollectionView>
+            </CollectionView>-->
 
-            <CollectionView x:Name="c02" EmptyView="Não foram encontrados resultados para a pesquisa.">
+            <!--<CollectionView x:Name="c02" EmptyView="Não foram encontrados resultados para a pesquisa." IsGrouped="True">
+
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding NomeCategoria}" FontSize="30" FontAttributes="Bold"  />
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
 
                 <CollectionView.Header>
                     <Label Text="Cabeçalho" Padding="10" TextColor="White" BackgroundColor="Gray" />
@@ -55,7 +61,57 @@
                 <CollectionView.Footer>
                     <Label Text="Rodapé" Padding="10" TextColor="White" BackgroundColor="Gray" />
                 </CollectionView.Footer>
+            </CollectionView>-->
+
+            <!--MeasureFirstItems faz pegar o tamanho da primeira linha e aplicar aos demais, ganha em performace-->
+
+            <Label Text=" - " x:Name="lblSelecao" />
+
+            <CollectionView SelectionMode="Multiple" SelectionChanged="c03_SelectionChanged" x:Name="c03" ItemSizingStrategy="MeasureAllItems" EmptyView="Não foram encontrados resultados para a pesquisa." IsGrouped="True" RemainingItemsThreshold="4" RemainingItemsThresholdReached="c03_RemainingItemsThresholdReached">
+
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding NomeCategoria}" FontSize="30" FontAttributes="Bold"  />
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+
+                <CollectionView.Header>
+                    <Label Text="Cabeçalho" Padding="10" TextColor="White" BackgroundColor="Gray" />
+                </CollectionView.Header>
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="1" Orientation="Vertical" VerticalItemSpacing="5" HorizontalItemSpacing="5" />
+                </CollectionView.ItemsLayout>
+
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#f2f2f2" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#ccc" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Label Text="{Binding Nome}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label Text="{Binding QtdFranquias}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+                <CollectionView.Footer>
+                    <Label Text="Rodapé" Padding="10" TextColor="White" BackgroundColor="Gray" />
+                </CollectionView.Footer>
             </CollectionView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
