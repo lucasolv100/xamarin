@@ -25,6 +25,7 @@ namespace AppGallery.Droid
                 "SwipeView_Experimental",
                 "Expander_Experimental",
                 "CarouselView_Experimental",
+                "IndicatorView_Experimental",
             });
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

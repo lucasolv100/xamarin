@@ -47,6 +47,8 @@
                         <Button Text="ListView" Clicked="AbrirListView" />
                         <Button Text="CollectionView" Clicked="AbrirCollectionView" />
                         <Button Text="CArouselView" Clicked="AbrirCArouselView" />
+                        <Button Text="IndicatorView" Clicked="AbrirIndicatorView" />
+                        <Button Text="ObservableCollection" Clicked="AbrirOBSCOLLView" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

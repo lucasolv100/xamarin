@@ -6,17 +6,21 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text=""/>
-            <CarouselView x:Name="carousel01" PeekAreaInsets="80">
+            <CarouselView x:Name="carousel01" Position="3" PeekAreaInsets="80" RemainingItemsThreshold="1" RemainingItemsThresholdReached="carousel01_RemainingItemsThresholdReached">
+                <!--<CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CarouselView.ItemsLayout>-->
+                
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="10">
                             <Frame BorderColor="#ccc">
-                            <StackLayout>
-                                <Label Text="{Binding Nome}" TextColor="Black" FontSize="30" FontAttributes="Bold" />
-                                <Label Text="{Binding Cargo}" TextColor="Gray" FontSize="15"  />
-                                <Label Text="{Binding Descricao}" TextColor="Gray" FontSize="12" />
-                            </StackLayout>
-                        </Frame>
+                                <StackLayout>
+                                    <Label Text="{Binding Nome}" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+                                    <Label Text="{Binding Cargo}" TextColor="Gray" FontSize="15"  />
+                                    <Label Text="{Binding Descricao}" TextColor="Gray" FontSize="12" />
+                                </StackLayout>
+                            </Frame>
                         </StackLayout>
                     </DataTemplate>
                 </CarouselView.ItemTemplate>

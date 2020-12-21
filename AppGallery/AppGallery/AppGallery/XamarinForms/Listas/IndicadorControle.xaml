@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Listas.IndicadorControle"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Indicator View" />
+            <CarouselView IndicatorView="IndicadorC">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>FIAT - UNO</x:String>
+                        <x:String>FIAT - MOBI</x:String>
+                        <x:String>FIAT - ARGO</x:String>
+                        <x:String>FIAT - KA</x:String>
+                        <x:String>FIAT - FUSION</x:String>
+                        <x:String>FIAT - ECOSPORT</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Frame>
+                                <Label Text="{Binding .}" />
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView x:Name="IndicadorC"
+                           IndicatorsShape="Square"
+                           IndicatorColor="Gray"
+                           Margin="0,0,0,10"
+                           SelectedIndicatorColor="Red"
+                           MaximumVisible="4"
+                           HorizontalOptions="CenterAndExpand"
+             >
+                <IndicatorView.IndicatorTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="30" IsClippedToBounds="True" WidthRequest="10">
+                            <Image Source="plane.png" />
+                        </Frame>
+                    </DataTemplate>
+                </IndicatorView.IndicatorTemplate>
+            </IndicatorView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
