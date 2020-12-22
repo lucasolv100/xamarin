@@ -48,7 +48,11 @@
                         <Button Text="CollectionView" Clicked="AbrirCollectionView" />
                         <Button Text="CArouselView" Clicked="AbrirCArouselView" />
                         <Button Text="IndicatorView" Clicked="AbrirIndicatorView" />
-                        <Button Text="ObservableCollection" Clicked="AbrirOBSCOLLView" />
+                        <Button Text="ObservableCollection, INotifyPropertyChanged" Clicked="AbrirOBSCOLLView" />
+                        <Button Text="DataTemplateSelector" Clicked="AbrirDTSelector" />
+
+                        <Label Text="Estilização" />
+                        <Button Text="Explicit Style" Clicked="AbrirExplicitStyle" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

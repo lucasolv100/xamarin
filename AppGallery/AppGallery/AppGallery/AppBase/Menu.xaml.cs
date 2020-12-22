@@ -219,5 +219,17 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Listas.ObservableCollectionLista());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirDTSelector(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Listas.SeletorTemplate());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirExplicitStyle(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Estilizacao.EstiloExplicito());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }
