@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilizacao.EstiloDinamico">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primaria">#e74c3c</Color>
+            <Style x:Key="BtnEstilo" TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Estilo Dinâmico" />
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="corEntrada" Placeholder="Digite uma cor hexadeximal" />
+                <Button Text="Ok" BackgroundColor="LightGray" Clicked="TrocarCor" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Estatico" Style="{StaticResource BtnEstilo}" BackgroundColor="{StaticResource Primaria}" />
+                <Button Text="Dinamico" Style="{StaticResource BtnEstilo}" BackgroundColor="{DynamicResource Primaria}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

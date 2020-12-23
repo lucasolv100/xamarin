@@ -53,6 +53,10 @@
 
                         <Label Text="Estilização" />
                         <Button Text="Explicit Style" Clicked="AbrirExplicitStyle" />
+                        <Button Text="Implicit Style" Clicked="AbrirImplicitStyle" />
+                        <Button Text="Global Style" Clicked="AbrirGlobalStyle" />
+                        <Button Text="Inhert Style" Clicked="AbrirInhertStyle" />
+                        <Button Text="Dynamic Style" Clicked="AbrirDynamicStyle" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>
