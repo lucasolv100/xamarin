@@ -255,5 +255,17 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Estilizacao.EstiloDinamico());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirStyleClass(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Estilizacao.EstiloClasse());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
+
+        private void AbrirVisualStateManager(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Estilizacao.EstiloVSM());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }

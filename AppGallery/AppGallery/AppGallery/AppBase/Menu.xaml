@@ -57,6 +57,8 @@
                         <Button Text="Global Style" Clicked="AbrirGlobalStyle" />
                         <Button Text="Inhert Style" Clicked="AbrirInhertStyle" />
                         <Button Text="Dynamic Style" Clicked="AbrirDynamicStyle" />
+                        <Button Text="Style Class" Clicked="AbrirStyleClass" />
+                        <Button Text="Visual State Manager" Clicked="AbrirVisualStateManager" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

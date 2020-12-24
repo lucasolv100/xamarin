@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilizacao.EstiloClasse">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button" Class="Arredondado">
+                <Setter Property="CornerRadius" Value="30"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+
+            <Style TargetType="Button" Class="Colorido">
+                <Setter Property="BackgroundColor" Value="#27aa60"/>
+            </Style>
+
+            <Style TargetType="Button" Class="CorTexto">
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Style Class" />
+
+            <Button Text="Style Class 01" StyleClass="Arredondado, Colorido" />
+            <Button Text="Style Class 01" StyleClass="Colorido, CorTexto" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
