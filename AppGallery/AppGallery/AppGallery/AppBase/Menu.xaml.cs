@@ -267,5 +267,11 @@ namespace AppGallery.AppBase
 			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Estilizacao.EstiloVSM());
 			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
 		}
+
+        private void AbrirMD(object sender, EventArgs e)
+        {
+			((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Estilizacao.EstiloMaterial());
+			((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+		}
     }
 }
