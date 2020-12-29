@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilizacao.Fontes"
+             Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Fontes personalizadas" />
+
+            <Label Text="Normal" FontSize="24" />
+            <Label Text="Gotham" FontSize="24" FontFamily="Gotham" />
+            <Label Text="Black" FontSize="24" FontFamily="GothamBlack" />
+            <Label Text="Light" FontSize="24" FontFamily="GothamLight" />
+
+
+            <Label Text="&#xf270;" FontSize="48" FontFamily="FontAwesome" TextColor="Orange" />
+            <Label Text="&#xf368;" FontSize="48" FontFamily="FontAwesome" TextColor="purple" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

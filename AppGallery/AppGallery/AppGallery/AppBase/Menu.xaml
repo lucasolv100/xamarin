@@ -60,6 +60,7 @@
                         <Button Text="Style Class" Clicked="AbrirStyleClass" />
                         <Button Text="Visual State Manager" Clicked="AbrirVisualStateManager" />
                         <Button Text="Material Design" Clicked="AbrirMD" />
+                        <Button Text="Fontes" Clicked="AbrirFontes" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>
