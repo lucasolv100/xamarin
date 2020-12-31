@@ -61,6 +61,8 @@
                         <Button Text="Visual State Manager" Clicked="AbrirVisualStateManager" />
                         <Button Text="Material Design" Clicked="AbrirMD" />
                         <Button Text="Fontes" Clicked="AbrirFontes" />
+                        <Button Text="Trocar Tema" Clicked="AbrirTrocarTema" />
+                        <Button Text="Trocar Tema SO" Clicked="AbrirTrocarTemaSO" />
                     </StackLayout>
                 </ScrollView>
             </ContentPage.Content>

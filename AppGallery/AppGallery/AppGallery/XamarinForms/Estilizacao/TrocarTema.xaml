@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilizacao.TrocarTema">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Trocar tema" />
+            <Label Text="Texto 01" />
+
+            <Button Text="Trocar tema" Clicked="trocar_tema" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

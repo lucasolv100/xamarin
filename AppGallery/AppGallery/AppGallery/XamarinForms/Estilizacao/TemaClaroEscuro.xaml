@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Estilizacao.TemaClaroEscuro">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <AppThemeBinding x:Key="CorTexto" Light="Black" Dark="White" />
+            <AppThemeBinding x:Key="FrameBorda" Light="Black" Dark="White" />
+            <AppThemeBinding x:Key="FrameFundo" Light="White" Dark="Blue" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Claro / Escuro - SO" />
+
+            <Label Text="Light" TextColor="{DynamicResource CorTexto}" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+            <Label Text="(Claro)" TextColor="{DynamicResource CorTexto}" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+
+            <Frame Margin="0,80,0,0" BorderColor="{DynamicResource FrameBorda}" BackgroundColor="{DynamicResource FrameFundo}" WidthRequest="150" HeightRequest="150">
+                <Label TextColor="{DynamicResource CorTexto}" Text="A" FontSize="100" HorizontalOptions="Center" />
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
